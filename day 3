@@ -115,3 +115,62 @@ int main () {
         b=c;
         } return 0; 
 }
+9.
+// prime number or not
+#include<iostream> 
+using namespace std;
+int main () {
+    int n;
+    cin>>n;
+    bool isprime =true;
+    if(n<2){
+        isprime=false;
+    }else 
+    {
+        for(int i=2; i<n; i++) 
+        {
+        if(n % i == 0)
+        {
+            isprime =false;
+            break;
+        }
+    }
+}
+if(isprime){
+    cout<<"prime number";
+}else{
+    cout<<"not a prime number ";
+return 0;}
+}
+10.
+
+// smartphone unlock
+#include<iostream> 
+using namespace std;
+int main () {
+  int password;
+  do{
+      cout<<"enter the password...";
+      cin>>password;
+      
+  }
+      while(password!=1223);
+      cout<<"phone unlocked...."; 
+      return 0;}
+11.
+#include<iostream> 
+using namespace std;
+int main () {
+ int currentwater=0;
+ int add;
+ while(currentwater<500)
+ {
+     cout<<"glass has" <<currentwater<<"ml. and  how much?";
+     cin>>add;
+     currentwater =currentwater + add;
+     
+ }
+     cout<<":glass is full with water : "<< currentwater << "ml";
+}
+
+
